@@ -8,16 +8,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Scheherazade+New:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --gold: #c9a84c;
-    --gold-light: #e8c97a;
-    --gold-dim: #a07830;
-    --deep: #1e2438;
-    --navy: #232a42;
-    --card: #2c3454;
-    --card2: #323c60;
-    --text: #f2ece0;
-    --muted: #b8c0d8;
-    --accent: #6aadee;
+    --gold: #9a6f1e;
+    --gold-light: #7a5415;
+    --gold-dim: #b8860b;
+    --deep: #f4efe4;
+    --navy: #ede6d8;
+    --card: #ffffff;
+    --card2: #faf5ec;
+    --text: #1c1a2e;
+    --muted: #5c5870;
+    --accent: #2a5298;
   }
 
 - { margin: 0; padding: 0; box-sizing: border-box; }
@@ -37,16 +37,16 @@ content: ‘’;
 position: fixed;
 inset: 0;
 background-image:
-radial-gradient(1px 1px at 10% 15%, rgba(255,255,255,0.6) 0%, transparent 100%),
-radial-gradient(1px 1px at 25% 40%, rgba(255,255,255,0.4) 0%, transparent 100%),
-radial-gradient(1.5px 1.5px at 40% 8%, rgba(201,168,76,0.5) 0%, transparent 100%),
-radial-gradient(1px 1px at 55% 60%, rgba(255,255,255,0.5) 0%, transparent 100%),
-radial-gradient(1px 1px at 70% 20%, rgba(255,255,255,0.3) 0%, transparent 100%),
-radial-gradient(1.5px 1.5px at 82% 75%, rgba(201,168,76,0.4) 0%, transparent 100%),
-radial-gradient(1px 1px at 92% 35%, rgba(255,255,255,0.5) 0%, transparent 100%),
-radial-gradient(1px 1px at 15% 80%, rgba(255,255,255,0.3) 0%, transparent 100%),
-radial-gradient(1px 1px at 60% 90%, rgba(255,255,255,0.4) 0%, transparent 100%),
-radial-gradient(1px 1px at 35% 65%, rgba(255,255,255,0.3) 0%, transparent 100%);
+radial-gradient(1px 1px at 10% 15%, rgba(154,111,30,0.3) 0%, transparent 100%),
+radial-gradient(1px 1px at 25% 40%, rgba(154,111,30,0.2) 0%, transparent 100%),
+radial-gradient(1.5px 1.5px at 40% 8%, rgba(154,111,30,0.5) 0%, transparent 100%),
+radial-gradient(1px 1px at 55% 60%, rgba(154,111,30,0.25) 0%, transparent 100%),
+radial-gradient(1px 1px at 70% 20%, rgba(154,111,30,0.15) 0%, transparent 100%),
+radial-gradient(1.5px 1.5px at 82% 75%, rgba(154,111,30,0.4) 0%, transparent 100%),
+radial-gradient(1px 1px at 92% 35%, rgba(154,111,30,0.25) 0%, transparent 100%),
+radial-gradient(1px 1px at 15% 80%, rgba(154,111,30,0.15) 0%, transparent 100%),
+radial-gradient(1px 1px at 60% 90%, rgba(154,111,30,0.2) 0%, transparent 100%),
+radial-gradient(1px 1px at 35% 65%, rgba(154,111,30,0.15) 0%, transparent 100%);
 pointer-events: none;
 z-index: 0;
 }
@@ -70,19 +70,19 @@ position: relative;
 font-size: 3.5rem;
 display: block;
 margin-bottom: 16px;
-filter: drop-shadow(0 0 18px rgba(201,168,76,0.7));
+filter: drop-shadow(0 0 18px rgba(154,111,30,0.7));
 animation: moonGlow 3s ease-in-out infinite;
 }
 
 @keyframes moonGlow {
-0%, 100% { filter: drop-shadow(0 0 18px rgba(201,168,76,0.7)); }
-50% { filter: drop-shadow(0 0 30px rgba(201,168,76,1)); }
+0%, 100% { filter: drop-shadow(0 0 18px rgba(154,111,30,0.7)); }
+50% { filter: drop-shadow(0 0 30px rgba(154,111,30,1)); }
 }
 
 .header-title {
 font-family: ‘Playfair Display’, serif;
 font-size: clamp(2rem, 5vw, 3rem);
-color: var(–gold-light);
+color: var(–gold);
 letter-spacing: 0.04em;
 line-height: 1.2;
 margin-bottom: 8px;
@@ -92,9 +92,12 @@ margin-bottom: 8px;
 font-family: ‘Scheherazade New’, serif;
 font-size: clamp(1.4rem, 4vw, 2rem);
 color: var(–gold);
-opacity: 0.85;
+
+```
 direction: rtl;
 margin-bottom: 12px;
+```
+
 }
 
 .header-sub {
@@ -122,14 +125,14 @@ background: linear-gradient(90deg, transparent, var(–gold), transparent);
 
 /* Special banner */
 .special-note {
-background: linear-gradient(135deg, rgba(201,168,76,0.25), rgba(201,168,76,0.12));
-border: 1px solid rgba(201,168,76,0.35);
+background: linear-gradient(135deg, rgba(154,111,30,0.25), rgba(154,111,30,0.12));
+border: 1px solid rgba(154,111,30,0.35);
 border-left: 3px solid var(–gold);
 border-radius: 8px;
 padding: 14px 18px;
 margin-bottom: 30px;
 font-size: 0.88rem;
-color: var(–gold-light);
+color: var(–gold);
 text-align: center;
 letter-spacing: 0.05em;
 }
@@ -140,7 +143,7 @@ font-size: 0.72rem;
 font-weight: 600;
 letter-spacing: 0.18em;
 text-transform: uppercase;
-color: var(–gold-dim);
+color: #8a6010;
 margin: 36px 0 16px;
 display: flex;
 align-items: center;
@@ -150,13 +153,13 @@ gap: 10px;
 content: ‘’;
 flex: 1;
 height: 1px;
-background: linear-gradient(90deg, rgba(201,168,76,0.3), transparent);
+background: linear-gradient(90deg, rgba(154,111,30,0.3), transparent);
 }
 
 /* Dua card */
 .dua-card {
 background: var(–card);
-border: 1px solid rgba(201,168,76,0.25);
+border: 1px solid rgba(154,111,30,0.3);
 border-radius: 10px;
 padding: 20px 22px;
 margin-bottom: 14px;
@@ -176,8 +179,8 @@ opacity: 0.6;
 }
 
 .dua-card:hover {
-border-color: rgba(201,168,76,0.3);
-box-shadow: 0 4px 24px rgba(201,168,76,0.07);
+border-color: rgba(154,111,30,0.3);
+box-shadow: 0 4px 24px rgba(154,111,30,0.07);
 }
 
 .dua-invocation {
@@ -207,11 +210,11 @@ font-family: ‘Scheherazade New’, serif;
 direction: rtl;
 font-size: 1.3rem;
 line-height: 2;
-color: var(–gold-light);
+color: var(–gold);
 text-align: right;
 margin-top: 10px;
 padding-top: 10px;
-border-top: 1px solid rgba(201,168,76,0.12);
+border-top: 1px solid rgba(154,111,30,0.2);
 }
 
 .dua-meaning {
@@ -224,16 +227,16 @@ letter-spacing: 0.02em;
 
 /* Special dua (Prophet’s recommended) */
 .dua-card.featured {
-background: linear-gradient(135deg, #3a4468, #303a60);
-border-color: rgba(201,168,76,0.35);
-box-shadow: 0 0 30px rgba(201,168,76,0.06);
+background: linear-gradient(135deg, #fff8eb, #fdf3df);
+border-color: rgba(154,111,30,0.35);
+box-shadow: 0 0 30px rgba(154,111,30,0.06);
 }
 
 .featured-badge {
 display: inline-block;
-background: rgba(201,168,76,0.2);
-border: 1px solid rgba(201,168,76,0.4);
-color: var(–gold-light);
+background: rgba(154,111,30,0.12);
+border: 1px solid rgba(154,111,30,0.4);
+color: var(–gold);
 font-size: 0.68rem;
 font-weight: 600;
 letter-spacing: 0.1em;
@@ -246,7 +249,7 @@ margin-bottom: 10px;
 /* Expanded dua block */
 .dua-block {
 background: var(–card2);
-border: 1px solid rgba(201,168,76,0.1);
+border: 1px solid rgba(154,111,30,0.1);
 border-radius: 10px;
 padding: 22px 24px;
 margin-bottom: 14px;
@@ -281,8 +284,8 @@ font-weight: 400;
 
 /* Waqeena block */
 .waqeena-block {
-background: linear-gradient(135deg, #2c3454, #303a60);
-border: 1px solid rgba(201,168,76,0.2);
+background: linear-gradient(135deg, #fff8eb, #fdf3df);
+border: 1px solid rgba(154,111,30,0.2);
 border-radius: 10px;
 padding: 24px;
 margin-bottom: 14px;
@@ -291,7 +294,7 @@ margin-bottom: 14px;
 .waqeena-block .base-dua {
 font-family: ‘Scheherazade New’, serif;
 font-size: 1.3rem;
-color: var(–gold-light);
+color: var(–gold);
 text-align: center;
 direction: rtl;
 margin-bottom: 16px;
@@ -313,8 +316,8 @@ gap: 8px;
 }
 
 .waqeena-item {
-background: rgba(255,255,255,0.08);
-border: 1px solid rgba(201,168,76,0.2);
+background: rgba(154,111,30,0.08);
+border: 1px solid rgba(154,111,30,0.2);
 border-radius: 7px;
 padding: 10px 14px;
 font-size: 0.9rem;
@@ -340,9 +343,9 @@ padding: 30px 20px;
 .ameen-text {
 font-family: ‘Playfair Display’, serif;
 font-size: clamp(1.6rem, 4vw, 2.4rem);
-color: var(–gold-light);
+color: var(–gold);
 letter-spacing: 0.1em;
-text-shadow: 0 0 30px rgba(201,168,76,0.5);
+text-shadow: 0 2px 8px rgba(154,111,30,0.3);
 }
 
 .ameen-arabic {
@@ -350,8 +353,11 @@ font-family: ‘Scheherazade New’, serif;
 font-size: 2rem;
 direction: rtl;
 color: var(–gold);
-opacity: 0.8;
+
+```
 margin-top: 6px;
+```
+
 }
 
 .footer {
@@ -405,142 +411,142 @@ opacity: 0.6;
 ```
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare sagheera wo kabeera gunaahon ko maaf farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, forgive our minor and major sins.</span></div>
+  <div class="content">Hamare sagheera wo kabeera gunaahon ko maaf farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, forgive our minor and major sins.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamaare khataon ko darguzar farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, overlook and pardon our faults and errors.</span></div>
+  <div class="content">Hamaare khataon ko darguzar farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, overlook and pardon our faults and errors.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hame Lailatul Qadr ata farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, grant us the blessings of Laylatul Qadr.</span></div>
+  <div class="content">Hame Lailatul Qadr ata farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, grant us the blessings of Laylatul Qadr.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hame kaamil imaan naseeb farma aur poori hidayat farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, bless us with complete faith and perfect guidance.</span></div>
+  <div class="content">Hame kaamil imaan naseeb farma aur poori hidayat farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, bless us with complete faith and perfect guidance.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Kalma-e-Tayyaba hamaari zabaan par jaari farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, keep the blessed Kalima ever upon our tongues.</span></div>
+  <div class="content">Kalma-e-Tayyaba hamaari zabaan par jaari farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, keep the blessed Kalima ever upon our tongues.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamein poore Ramzan ki rehmatein, barkaten aur anwaar se maalamaal farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, fill us with the mercies, blessings and divine lights of the entire month of Ramzan.</span></div>
+  <div class="content">Hamein poore Ramzan ki rehmatein, barkaten aur anwaar se maalamaal farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, fill us with the mercies, blessings and divine lights of the entire month of Ramzan.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare dilon ko ikhlaas ke saath deen ki taraf pher de.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, turn our hearts sincerely towards Your deen.</span></div>
+  <div class="content">Hamare dilon ko ikhlaas ke saath deen ki taraf pher de.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, turn our hearts sincerely towards Your deen.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Apni khaas rahmat naazil farma aur apne qahr wo azaab se bacha.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, shower Your special mercy upon us and protect us from Your wrath and punishment.</span></div>
+  <div class="content">Apni khaas rahmat naazil farma aur apne qahr wo azaab se bacha.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, shower Your special mercy upon us and protect us from Your wrath and punishment.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Jhoot, gheebat, keena, bughdh, takabbur, burai aur jhagde se hamaari hifazat farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, protect us from lying, backbiting, malice, hatred, arrogance, evil and quarrelling.</span></div>
+  <div class="content">Jhoot, gheebat, keena, bughdh, takabbur, burai aur jhagde se hamaari hifazat farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, protect us from lying, backbiting, malice, hatred, arrogance, evil and quarrelling.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Ek lamhe ke liye bhi hamein duniya ke hawaale na farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, do not leave us to the distractions of this world even for a moment.</span></div>
+  <div class="content">Ek lamhe ke liye bhi hamein duniya ke hawaale na farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, do not leave us to the distractions of this world even for a moment.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Tangdasti, khauf, ghabrahat aur qarz ke bojh ko door farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, remove poverty, fear, anxiety and the burden of debt from us.</span></div>
+  <div class="content">Tangdasti, khauf, ghabrahat aur qarz ke bojh ko door farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, remove poverty, fear, anxiety and the burden of debt from us.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hashr ki ruswai se hamein, hamare walidain aur poori Ummat-e-Mohammadia ki hifazat farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, protect us, our parents and the entire Ummah from disgrace on the Day of Judgement.</span></div>
+  <div class="content">Hashr ki ruswai se hamein, hamare walidain aur poori Ummat-e-Mohammadia ki hifazat farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, protect us, our parents and the entire Ummah from disgrace on the Day of Judgement.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Pul-e-Siraat se bijli ki tarah guzaar de.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, let us cross the bridge of Siraat like a bolt of lightning.</span></div>
+  <div class="content">Pul-e-Siraat se bijli ki tarah guzaar de.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, let us cross the bridge of Siraat like a bolt of lightning.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Bina hisaab-o-kitaab Jannat-ul-Firdaus mein hamein jagah ata farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, grant us a place in Jannat-ul-Firdaus without reckoning.</span></div>
+  <div class="content">Bina hisaab-o-kitaab Jannat-ul-Firdaus mein hamein jagah ata farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, grant us a place in Jannat-ul-Firdaus without reckoning.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Naama-e-Aamal hamare dayen haath mein ata farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, give us our book of deeds in our right hands.</span></div>
+  <div class="content">Naama-e-Aamal hamare dayen haath mein ata farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, give us our book of deeds in our right hands.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Apne Arsh ke saaye mein hamein jagah naseeb farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, grant us a place in the shade of Your Throne on that Day.</span></div>
+  <div class="content">Apne Arsh ke saaye mein hamein jagah naseeb farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, grant us a place in the shade of Your Throne on that Day.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hajj-e-Baitullah maqbool wo mabroor naseeb farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, bless us with an accepted and virtuous Hajj.</span></div>
+  <div class="content">Hajj-e-Baitullah maqbool wo mabroor naseeb farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, bless us with an accepted and virtuous Hajj.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Munkir wo Nakeer ke sawalaat ham par aasaan farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, make the questioning of Munkar and Nakeer easy for us in the grave.</span></div>
+  <div class="content">Munkir wo Nakeer ke sawalaat ham par aasaan farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, make the questioning of Munkar and Nakeer easy for us in the grave.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Halaal rozi ata farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, grant us lawful and pure sustenance.</span></div>
+  <div class="content">Halaal rozi ata farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, grant us lawful and pure sustenance.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Qayamat ke roz apna deedar ata farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, bless us with Your vision on the Day of Judgement.</span></div>
+  <div class="content">Qayamat ke roz apna deedar ata farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, bless us with Your vision on the Day of Judgement.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamein tere bandon ka mohtaaj na bana.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, make us needful only of You and never dependent on Your creation.</span></div>
+  <div class="content">Hamein tere bandon ka mohtaaj na bana.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, make us needful only of You and never dependent on Your creation.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Choti badi beemari se hamaari aur kul Ummat-e-Mohammadia ki hifazat farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, protect us and the entire Ummah from all illnesses, big and small.</span></div>
+  <div class="content">Choti badi beemari se hamaari aur kul Ummat-e-Mohammadia ki hifazat farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, protect us and the entire Ummah from all illnesses, big and small.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Taqwa aur parhezgaari naseeb farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, grant us piety and God-consciousness.</span></div>
+  <div class="content">Taqwa aur parhezgaari naseeb farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, grant us piety and God-consciousness.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Aap ﷺ ke pyare tareeqe hum ko sikha de aur Aap ﷺ ki Sunnah par chalne ki taufeeq de.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, teach us the blessed ways of Your Prophet ﷺ and grant us the ability to follow his Sunnah.</span></div>
+  <div class="content">Aap ﷺ ke pyare tareeqe hum ko sikha de aur Aap ﷺ ki Sunnah par chalne ki taufeeq de.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, teach us the blessed ways of Your Prophet ﷺ and grant us the ability to follow his Sunnah.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Qayamat ke din Huzoor ﷺ ki shafa'at naseeb farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, grant us the intercession of the Prophet ﷺ on the Day of Judgement.</span></div>
+  <div class="content">Qayamat ke din Huzoor ﷺ ki shafa'at naseeb farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, grant us the intercession of the Prophet ﷺ on the Day of Judgement.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Qayamat ke din Huzoor ﷺ ke mubarak haathon se Jaam-e-Kausar peena naseeb farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, bless us with drinking from the blessed hands of the Prophet ﷺ at the Fountain of Kausar.</span></div>
+  <div class="content">Qayamat ke din Huzoor ﷺ ke mubarak haathon se Jaam-e-Kausar peena naseeb farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, bless us with drinking from the blessed hands of the Prophet ﷺ at the Fountain of Kausar.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare dilon mein apni aur Huzoor ﷺ ki mohabbat naseeb farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, place Your love and the love of the Prophet ﷺ in our hearts.</span></div>
+  <div class="content">Hamare dilon mein apni aur Huzoor ﷺ ki mohabbat naseeb farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, place Your love and the love of the Prophet ﷺ in our hearts.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hume sachi aur pakki tauba karne ki taufeeq ata farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, grant us the ability to make sincere and true repentance.</span></div>
+  <div class="content">Hume sachi aur pakki tauba karne ki taufeeq ata farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, grant us the ability to make sincere and true repentance.</span></div>
 </div>
 ```
 
@@ -595,57 +601,57 @@ opacity: 0.6;
 ```
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Tamaam marhumeen ko Jannat-ul-Firdaus ata farma, dozakh ke azaab se, qabar ke azaab se aur jahannam ki aag se bacha.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, grant all the deceased Jannat-ul-Firdaus and protect them from the punishment of hellfire, the grave and the fire of Jahannam.</span></div>
+  <div class="content">Tamaam marhumeen ko Jannat-ul-Firdaus ata farma, dozakh ke azaab se, qabar ke azaab se aur jahannam ki aag se bacha.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, grant all the deceased Jannat-ul-Firdaus and protect them from the punishment of hellfire, the grave and the fire of Jahannam.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare marhumeen ke gunaahon ko maaf farma, un ki khataon se darguzar farma aur unhe apni rehmat ki chadar mein dhamp le.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, forgive the sins of our departed, overlook their faults and wrap them in Your blanket of mercy.</span></div>
+  <div class="content">Hamare marhumeen ke gunaahon ko maaf farma, un ki khataon se darguzar farma aur unhe apni rehmat ki chadar mein dhamp le.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, forgive the sins of our departed, overlook their faults and wrap them in Your blanket of mercy.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare marhumeen ki qabrein noor se bhar de, unhe qabar ke tanhaapan mein uns aur sukoon ata farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, fill the graves of our departed with light, and grant them comfort and peace in the loneliness of the grave.</span></div>
+  <div class="content">Hamare marhumeen ki qabrein noor se bhar de, unhe qabar ke tanhaapan mein uns aur sukoon ata farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, fill the graves of our departed with light, and grant them comfort and peace in the loneliness of the grave.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare marhumeen ki qabrein unke liye jannat ka baghicha bana de, aur unhe qabar ke azaab se mahfooz rakh.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, make their graves a garden from the gardens of Paradise, and protect them from the punishment of the grave.</span></div>
+  <div class="content">Hamare marhumeen ki qabrein unke liye jannat ka baghicha bana de, aur unhe qabar ke azaab se mahfooz rakh.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, make their graves a garden from the gardens of Paradise, and protect them from the punishment of the grave.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare walidain — jab bhi unhe yaad karte hain — unhe apni rehmat se nawaaz, unke darjaat buland farma aur unhe Huzoor ﷺ ki rafaqat mein rakh.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, whenever we remember our parents, shower them with Your mercy, elevate their ranks and keep them in the company of the Prophet ﷺ.</span></div>
+  <div class="content">Hamare walidain — jab bhi unhe yaad karte hain — unhe apni rehmat se nawaaz, unke darjaat buland farma aur unhe Huzoor ﷺ ki rafaqat mein rakh.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, whenever we remember our parents, shower them with Your mercy, elevate their ranks and keep them in the company of the Prophet ﷺ.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare marhumeen ke naam par jo bhi sadqa-e-jaariya, ilm aur nek aulaad ka silsila jaari hai, uska sawaab unhe pohanchata reh.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, let all ongoing charity, knowledge and righteous deeds done in their name continue to reach them as reward.</span></div>
+  <div class="content">Hamare marhumeen ke naam par jo bhi sadqa-e-jaariya, ilm aur nek aulaad ka silsila jaari hai, uska sawaab unhe pohanchata reh.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, let all ongoing charity, knowledge and righteous deeds done in their name continue to reach them as reward.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare marhumeen ko Munkir wo Nakeer ke sawalaat se aasaani ata farma aur unhe seedha jawaab dene ki taufeeq de.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, ease the questioning of Munkir and Nakeer for our departed and grant them the right answers.</span></div>
+  <div class="content">Hamare marhumeen ko Munkir wo Nakeer ke sawalaat se aasaani ata farma aur unhe seedha jawaab dene ki taufeeq de.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, ease the questioning of Munkir and Nakeer for our departed and grant them the right answers.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare marhumeen ke liye Hashr ke din meezan mein nekiyan bhaari kar de aur unhe bina hisaab jannat mein daakhil farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, make their good deeds heavy on the Scale on the Day of Judgement and admit them into Paradise without reckoning.</span></div>
+  <div class="content">Hamare marhumeen ke liye Hashr ke din meezan mein nekiyan bhaari kar de aur unhe bina hisaab jannat mein daakhil farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, make their good deeds heavy on the Scale on the Day of Judgement and admit them into Paradise without reckoning.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Un tamaam logon ko bhi maaf farma jo is duniya se chale gaye aur jinka koi poochhne wala nahi — un yateemon, miskeenonke aur lawarisoon ko bhi jannat ata farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, also forgive those who left this world with no one to pray for them — the orphans, the poor and the forgotten — and grant them Paradise too.</span></div>
+  <div class="content">Un tamaam logon ko bhi maaf farma jo is duniya se chale gaye aur jinka koi poochhne wala nahi — un yateemon, miskeenonke aur lawarisoon ko bhi jannat ata farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, also forgive those who left this world with no one to pray for them — the orphans, the poor and the forgotten — and grant them Paradise too.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Tamaam Ummat-e-Mohammadia ke marhumeen ko — jinhe hum jaante hain aur jinhe nahi jaante — apni rehmat aur maghfirat se nawaz.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, bless all departed Muslims of the Ummah — those we know and those we do not — with Your mercy and forgiveness.</span></div>
+  <div class="content">Tamaam Ummat-e-Mohammadia ke marhumeen ko — jinhe hum jaante hain aur jinhe nahi jaante — apni rehmat aur maghfirat se nawaz.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, bless all departed Muslims of the Ummah — those we know and those we do not — with Your mercy and forgiveness.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare marhumeen ko Qayamat ke din Huzoor ﷺ ke saath uthaa, unke haathon se Jaam-e-Kausar pilaa aur unhe Jannat mein hamare saath jama farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, resurrect our departed alongside the Prophet ﷺ, let them drink from Kausar from his blessed hands, and reunite us with them in Jannah.</span></div>
+  <div class="content">Hamare marhumeen ko Qayamat ke din Huzoor ﷺ ke saath uthaa, unke haathon se Jaam-e-Kausar pilaa aur unhe Jannat mein hamare saath jama farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, resurrect our departed alongside the Prophet ﷺ, let them drink from Kausar from his blessed hands, and reunite us with them in Jannah.</span></div>
 </div>
 ```
 
@@ -678,27 +684,27 @@ opacity: 0.6;
 ```
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamein nek bana.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, make us righteous. (Aameen)</span></div>
+  <div class="content">Hamein nek bana.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, make us righteous. (Aameen)</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare bachon ko nek taufeeq aur nek hidayat ata farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, grant our children righteous guidance and good taufeeq.</span></div>
+  <div class="content">Hamare bachon ko nek taufeeq aur nek hidayat ata farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, grant our children righteous guidance and good taufeeq.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare bachon ki zindagi aasaan kar de.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, ease the lives of our children.</span></div>
+  <div class="content">Hamare bachon ki zindagi aasaan kar de.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, ease the lives of our children.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare bachon ke imtehaan mein kamyabi ata farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, grant our children success in their exams and trials.</span></div>
+  <div class="content">Hamare bachon ke imtehaan mein kamyabi ata farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, grant our children success in their exams and trials.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamein apne maa baap ki taraf pyaar aur sabar se pesh aane ki taufeeq ata farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, grant us the ability to treat our parents with love and patience.</span></div>
+  <div class="content">Hamein apne maa baap ki taraf pyaar aur sabar se pesh aane ki taufeeq ata farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, grant us the ability to treat our parents with love and patience.</span></div>
 </div>
 ```
 
@@ -731,67 +737,67 @@ opacity: 0.6;
 ```
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare ghar mein, hamare rishtedaaron mein, hamare maal mein aur hamare waqt mein khair aur barkat ata farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, place khair and barakah in our homes, our relationships, our wealth and our time.</span></div>
+  <div class="content">Hamare ghar mein, hamare rishtedaaron mein, hamare maal mein aur hamare waqt mein khair aur barkat ata farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, place khair and barakah in our homes, our relationships, our wealth and our time.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare andar ki khairiyat zahir kar de aur jo burai chhupi hai use khatam farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, bring out the goodness within us and eliminate the hidden evil inside us.</span></div>
+  <div class="content">Hamare andar ki khairiyat zahir kar de aur jo burai chhupi hai use khatam farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, bring out the goodness within us and eliminate the hidden evil inside us.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hume khair ka daai bana de — aise ke hum har jagah khair failaayein.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, make us spreaders of goodness wherever we go.</span></div>
+  <div class="content">Hume khair ka daai bana de — aise ke hum har jagah khair failaayein.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, make us spreaders of goodness wherever we go.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare muamalaat mein khair rakh — hamare aane mein aur jaane mein, hamare uthne mein aur baithne mein.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, place khair in all our affairs — in our coming and going, in our rising and sitting.</span></div>
+  <div class="content">Hamare muamalaat mein khair rakh — hamare aane mein aur jaane mein, hamare uthne mein aur baithne mein.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, place khair in all our affairs — in our coming and going, in our rising and sitting.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Jo rizq Tu ne hamare liye likha hai use khair ke saath de, aur jis mein khair nahi us se door rakh.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, give us the sustenance You have decreed for us with goodness, and keep us away from that in which there is no good.</span></div>
+  <div class="content">Jo rizq Tu ne hamare liye likha hai use khair ke saath de, aur jis mein khair nahi us se door rakh.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, give us the sustenance You have decreed for us with goodness, and keep us away from that in which there is no good.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare bachon ki zindagi mein khair ka rasta khol de aur unhe burai ke raston se bachaa le.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, open the paths of goodness in our children's lives and shield them from the roads of evil.</span></div>
+  <div class="content">Hamare bachon ki zindagi mein khair ka rasta khol de aur unhe burai ke raston se bachaa le.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, open the paths of goodness in our children's lives and shield them from the roads of evil.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare rishton mein khair rakh — mehram ho ya ghair mehram, dost ho ya parosee — sab ke saath hamaari guftugu aur muamalat khair par ho.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, place goodness in all our relationships — with family, friends and neighbours — let our words and dealings always be rooted in khair.</span></div>
+  <div class="content">Hamare rishton mein khair rakh — mehram ho ya ghair mehram, dost ho ya parosee — sab ke saath hamaari guftugu aur muamalat khair par ho.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, place goodness in all our relationships — with family, friends and neighbours — let our words and dealings always be rooted in khair.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare safaroon mein khair rakh — duniyawi safar ho ya aakhirat ka safar — dono mein khair aur salamati naseeb farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, place goodness in all our journeys — both worldly travels and the final journey to the hereafter — and grant us safety in both.</span></div>
+  <div class="content">Hamare safaroon mein khair rakh — duniyawi safar ho ya aakhirat ka safar — dono mein khair aur salamati naseeb farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, place goodness in all our journeys — both worldly travels and the final journey to the hereafter — and grant us safety in both.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Jo baat hum bolte hain, jo kaam hum karte hain, jo sochte hain — un sab mein khair rakh aur unhe apni raza ke mutaabiq bana de.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, place goodness in everything we say, do and think — and align it all with Your pleasure.</span></div>
+  <div class="content">Jo baat hum bolte hain, jo kaam hum karte hain, jo sochte hain — un sab mein khair rakh aur unhe apni raza ke mutaabiq bana de.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, place goodness in everything we say, do and think — and align it all with Your pleasure.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Jo khair Tu ne dusron ko diya hai us mein haasad se bacha, aur hamare hisse mein bhi waise hi khair aur barkat likhi de.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, protect us from jealousy over the goodness You have given to others, and write for us our own share of khair and blessing.</span></div>
+  <div class="content">Jo khair Tu ne dusron ko diya hai us mein haasad se bacha, aur hamare hisse mein bhi waise hi khair aur barkat likhi de.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, protect us from jealousy over the goodness You have given to others, and write for us our own share of khair and blessing.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Is raat mein — Lailatul Qadr ki is mubarak raat mein — hamare liye wo khair likh de jo hamare anumaan se bhi pare ho.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, on this blessed night of Laylatul Qadr, decree for us a goodness beyond what we can even imagine.</span></div>
+  <div class="content">Is raat mein — Lailatul Qadr ki is mubarak raat mein — hamare liye wo khair likh de jo hamare anumaan se bhi pare ho.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, on this blessed night of Laylatul Qadr, decree for us a goodness beyond what we can even imagine.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare dushmanon ke shar se, zamane ke fitno se aur nafs ki burai se hume mahfooz rakh aur in sab ke badle mein khair ata farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, protect us from the harm of our enemies, the trials of the age and the evil of our own selves — and replace all of it with goodness.</span></div>
+  <div class="content">Hamare dushmanon ke shar se, zamane ke fitno se aur nafs ki burai se hume mahfooz rakh aur in sab ke badle mein khair ata farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, protect us from the harm of our enemies, the trials of the age and the evil of our own selves — and replace all of it with goodness.</span></div>
 </div>
 
 <div class="dua-line">
   <div class="label">Aye Allah ﷻ</div>
-  <div class="content">Hamare khatme ko khair par rakh — akhri saans mein kalma-e-tayyaba aur tere saath khushnudi naseeb farma.<br><span style="color:var(--muted);font-size:0.82rem;font-style:italic;">O Allah, seal our endings with goodness — grant us the Kalima on our last breath and let us meet You in a state of Your pleasure.</span></div>
+  <div class="content">Hamare khatme ko khair par rakh — akhri saans mein kalma-e-tayyaba aur tere saath khushnudi naseeb farma.<br><span style="color:#5c5870;font-size:0.82rem;font-style:italic;">O Allah, seal our endings with goodness — grant us the Kalima on our last breath and let us meet You in a state of Your pleasure.</span></div>
 </div>
 ```
 
